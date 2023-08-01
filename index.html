@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/720f2110e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACION -->
+
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <img class="logo" src="./Imagenes/logo/logo2_Mesa de trabajo 1.png" alt="...">
+            <a id="textoNavbar" class="navbar-brand" href="#">Game Front</a>
+            <button id="toogler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="btn btn-outline-warning mt-2 me-3" style="border: 0px; display: flex; border: 1px solid rgba(255, 255, 255, 0.184); box-shadow: 0px 0px 1px white;" aria-current="page" href="#"><i class="fa-solid fa-house mt-1 me-2"></i>Home</a>
+                </li>     
+                <li class="nav-item">
+                    <a class="btn btn-outline-success mt-2 me-3" data-bs-toggle="modal" data-bs-target="#exampleCompra1" onclick="mostrarCarrito()" style="border: 0px; display: flex; border: 1px solid rgba(255, 255, 255, 0.184); box-shadow: 0px 0px 1px white;" aria-current="page"><i class="fa-solid fa-cart-shopping mt-1 me-2"></i>Carrito</a>
+                </li>     
+            </ul>
+            <form class="d-flex" role="button">
+
+            </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NAV VACIA PARA OCUPAR EL ESPACIO DEL FIXED -->
+
+    <nav style="height: 85px; background-color: rgb(0, 0, 0); box-shadow: 0px 0px 10px black;" class="navbar navbar-expand-lg bg-body-tertiary">
+    </nav>
+
+    <!-- CARRUSEL GRANDE -->
+
+    <div id="carouselExampleIndicators0" class="carousel slide mt-5">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators0" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators0" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators0" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators0" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators0" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators0" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators0" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators0" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators0" data-bs-slide-to="9" aria-label="Slide 10"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Imagenes/carrusel principal/1img.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/carrusel principal/2img.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/carrusel principal/3img.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/carrusel principal/4img.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/carrusel principal/5img.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/carrusel principal/6img.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/carrusel principal/7img.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/carrusel principal/8img.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/carrusel principal/9img.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/carrusel principal/10img.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators0" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators0" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- CARDS DE LOS JUEGOS -->
+
+    <center>
+    <div class="row g-3 p-5">
+        <div class="col-md-3">
+            <div id="card1" class="card mt-4" style="width: 18rem;">
+                <img id="cardsImg" src="./Imagenes/cards/zelda.jpg" class="card-img-top" alt="...">
+                <div id="cardCuerpo" class="card-body">
+                    <h5 id="titulosCards" class="card-title">The Legend of Zelda <br> Tears of the Kingdom</h5>
+                    <ul class="list-group list-group-flush">
+                        <li id="fichaInf" class="list-group-item">Consola: Nintendo Switch <i class="fa-sharp fa-solid fa-toggle-on"></i></li>
+                        <li id="fichaInf" class="list-group-item">Fecha: 2023</li>
+                        <li id="fichaInf" class="list-group-item">Precio: 350.000 COP</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-info mt-2" data-bs-toggle="modal" data-bs-target="#exampleInformarcion1">Más Información</button>
+                    <button type="button" class="btn btn-outline-success mt-2" onclick="añadirCarrito('The Legend of Zelda: Tears of the Kingdom', 350000)"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+            
+        <div class="col-md-3">
+            <div id="card2" class="card mt-4" style="width: 18rem;">
+                <img id="cardsImg" src="./Imagenes/cards/isaac.jpg" class="card-img-top" alt="...">
+                <div id="cardCuerpo" class="card-body">
+                    <h5 id="titulosCards" class="card-title">The Binding of Isaac <br>Repentance</h5>
+                    <ul class="list-group list-group-flush">
+                        <li id="fichaInf" class="list-group-item">Consola: Steam <i class="fa-brands fa-steam"></i></li>
+                        <li id="fichaInf" class="list-group-item">Fecha: 2021</li>
+                        <li id="fichaInf" class="list-group-item">Precio: 90.000 COP</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-info mt-2" data-bs-toggle="modal" data-bs-target="#exampleInformarcion2">Más Información</button>
+                    <button type="button" class="btn btn-outline-success mt-2" onclick="añadirCarrito('The Binding of Isaac Repentance', 90000)"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div id="card3" class="card mt-4" style="width: 18rem;">
+                <img id="cardsImg" src="./Imagenes/cards/re8.jpg" class="card-img-top" alt="...">
+                <div id="cardCuerpo" class="card-body">
+                    <h5 id="titulosCards" class="card-title">Resident Evil <br><br> Village</h5>
+                        <ul class="list-group list-group-flush">
+                        <li id="fichaInf" class="list-group-item">Consola: PlayStation 5 <i class="fa-brands fa-playstation"></i></li>
+                        <li id="fichaInf" class="list-group-item">Fecha: 2021</li>
+                        <li id="fichaInf" class="list-group-item">Precio: 250.000 COP</li>
+                        </ul>
+                        <button type="button" class="btn btn-outline-info mt-2" data-bs-toggle="modal" data-bs-target="#exampleInformarcion3">Más Información</button>
+                        <button type="button" class="btn btn-outline-success mt-2" onclick="añadirCarrito('Resident Evil Village', 250000)"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div id="card4" class="card mt-4" style="width: 18rem;">
+                <img id="cardsImg" src="./Imagenes/cards/silent.jpg" class="card-img-top" alt="...">
+                <div id="cardCuerpo" class="card-body">
+                    <h5 id="titulosCards" class="card-title">Silent Hill <br><br> 2</h5>
+                        <ul class="list-group list-group-flush">
+                        <li id="fichaInf" class="list-group-item">Consola: PlayStation 5 <i class="fa-brands fa-playstation"></i></li>
+                        <li id="fichaInf" class="list-group-item">Fecha: 2023</li>
+                        <li id="fichaInf" class="list-group-item">Precio: 300.000 COP</li>
+                        </ul>
+                        <button type="button" class="btn btn-outline-info mt-2" data-bs-toggle="modal" data-bs-target="#exampleInformarcion4">Más Información</button>
+                        <button type="button" class="btn btn-outline-success mt-2" onclick="añadirCarrito('Silent Hill 2', 300000)"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </center>
+
+    <!-- MODAL INFORMACION DE LOS JUEGOS -->
+    
+    <div class="modal fade" id="exampleInformarcion1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 id="titulosCardsModal" class="modal-title" id="exampleModalLabel"><b>The Legend of Zelda Tears of the Kingdom</b></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                    <video id="videos" controls autoplay muted>
+                        <source src="./videos/modals/Zelda.mp4" type="video/mp4">
+                    </video>
+                    <li id="descripcionCards" class="list-group-item"><b>The Legend of Zelda: Tears of the Kingdom es la secuela del galardonado Breath of the Wild, uno de los títulos más 
+                        importantes de su generación.
+                        <br><br>
+                        Esta nueva aventura pretende llevarnos a las profundidades de un templo subterráneo, en donde un cadáver momificado de alguna forma toma vida, 
+                        levantando así el castillo de Hyrule por los cielos.</b></li>
+                    <div id="carouselExampleIndicators" class="carousel slide mt-3 shadow-lg p-3 mb-1 bg-body rounded" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./Imagenes/cards/carrusel cards/1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./Imagenes/cards/carrusel cards/2.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./Imagenes/cards/carrusel cards/3.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Salir<i class="fa-solid fa-right-from-bracket" style="margin-left: 5px;"></i></button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleInformarcion2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 id="titulosCardsModal" class="modal-title fs-5" id="exampleModalLabel">The Binding of Isaac Repentance</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                    <video id="videos" controls autoplay muted>
+                        <source src="./videos/modals/isaac.mp4" type="video/mp4">
+                    </video>
+                    <li id="descripcionCards" class="list-group-item"><b>The Binding of Isaac: Repentance es la versión definitiva de The Binding of Isaac e incluye todo el contenido de 
+                        Rebirth, Afterbirth y Afterbirth+, además de nuevas características y una novedosa jugabilidad. 
+                        <br><br>
+                        ¡Es la edición definitiva del juego de exploración de mazmorras que revolucionó el género!</b></li>
+                    <div id="carouselExampleIndicators1" class="carousel slide mt-3 shadow-lg p-3 mb-1 bg-body rounded" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="./Imagenes/cards/carrusel cards/1.1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="./Imagenes/cards/carrusel cards/2.1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="./Imagenes/cards/carrusel cards/3.1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Salir<i class="fa-solid fa-right-from-bracket" style="margin-left: 5px;"></i></button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleInformarcion3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 id="titulosCardsModal" class="modal-title fs-5" id="exampleModalLabel">Resident Evil Village</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                    <video id="videos" controls autoplay muted>
+                        <source src="./videos/modals/Re8.mp4" type="video/mp4">
+                    </video>
+                    <li id="descripcionCards" class="list-group-item"><b>Situado unos años más tarde de los terroríficos acontecimientos del laureado Resident Evil 7 
+                        biohazard, esta nueva historia empieza con Ethan Winters y su mujer Mia viviendo en paz en un nuevo lugar, libres de las pesadillas del pasado.
+                        <br><br> 
+                        Pero, en el mismo momento en que empiezan a construir su nueva vida juntos, la tragedia se cierne de nuevo sobre ellos. Cuando su casa se ve 
+                        atacada por Chris Redfield, el capitán de la BSAA, Ethan debe adentrarse en los infiernos una vez más para traer de vuelta a su hija secuestrada.</b></li>
+                    <div id="carouselExampleIndicators2" class="carousel slide mt-3 shadow-lg p-3 mb-1 bg-body rounded" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="./Imagenes/cards/carrusel cards/1.2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="./Imagenes/cards/carrusel cards/2.2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="./Imagenes/cards/carrusel cards/3.2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Salir<i class="fa-solid fa-right-from-bracket" style="margin-left: 5px;"></i></button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleInformarcion4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 id="titulosCardsModal" class="modal-title fs-5" id="exampleModalLabel">Silent Hill 2</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                    <video id="videos" controls autoplay muted>
+                        <source src="./videos/modals/SilentHill.mp4" type="video/mp4">
+                    </video>
+                    <li id="descripcionCards" class="list-group-item"><b>James Sunderland ha llegado al pueblo de Silent Hill después de haber recibido una carta de su 
+                        esposa, Mary, a pesar de que había muerto de una enfermedad hace tres años. 
+                        <br><br>
+                        La carta afirma que Mary está a la espera de James en su "lugar 
+                        especial", lo que confunde a James, ya que todo el pueblo de Silent Hill era su "lugar especial".</b></li>
+                    <div id="carouselExampleIndicators3" class="carousel slide mt-3 shadow-lg p-3 mb-1 bg-body rounded" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="./Imagenes/cards/carrusel cards/1.3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="./Imagenes/cards/carrusel cards/2.3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="./Imagenes/cards/carrusel cards/3.3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Salir<i class="fa-solid fa-right-from-bracket" style="margin-left: 5px;"></i></button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </center>
+
+    <!-- MODAL DE CARRITO DE COMPRAS -->
+        <div class="modal fade" id="exampleCompra1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping"></i><b id="tituloCarrito">Carrito de compras</b></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul id="cartItems"></ul>
+                        <center>
+                        <p id="totalPrice">Total: 0 COP</p>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-success" onclick="comprarRealizada()">Comprar <i class="fa-brands fa-shopify"></i></button>
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Salir<i class="fa-solid fa-right-from-bracket" style="margin-left: 5px;"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start bg-light text-muted mt-5" id="footer"> 
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="background-color: #000000; color: white;">
+            <div class="me-5 d-none d-lg-block">
+                <span>Nuestras redes sociales:</span>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank" class="me-4 text-reset" style="text-decoration: none;">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/home?lang=es" target="_blank" class="me-4 text-reset" style="text-decoration: none;">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.google.com/?hl=es" target="_blank" class="me-4 text-reset" style="text-decoration: none;">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="me-4 text-reset" style="text-decoration: none;">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/feed/" target="_blank" class="me-4 text-reset" style="text-decoration: none;">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/" target="_blank" class="me-4 text-reset" style="text-decoration: none;">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i></i>GAME - FRONT 🎮🕹️
+                        </h6>
+                        <p id="descripcionCards"><b>
+                            Bienvenido a GAME - FRONT, tienda online de videojuegos, el lugar ideal para los amantes del gaming. Aquí encontrarás una amplia 
+                            selección de títulos para todas las plataformas. Navega, elige y sumérgete en aventuras asombrosas. 
+                            <br><br>
+                            ¡Prepárate para vivir experiencias inolvidables!🎮🖱️</b>
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
+                        <p>
+                            <a href="#merchandising" class="text-reset" style="text-decoration: none;" >---------</a>
+                        </p>
+                        <p>
+                            <a href="#favoritos" class="text-reset" style="text-decoration: none;" >---------</a>
+                        </p>
+                        <p>
+                            <a href="#modelos" class="text-reset" style="text-decoration: none;" >---------</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Links</h6>
+                        <p>
+                            <a href="#productos" class="text-reset" style="text-decoration: none;" >---------</a>
+                        </p>
+                        <p>
+                            <a href="#tabla-usuarios" class="text-reset" style="text-decoration: none;" >---------</a>
+                        </p>
+                        <p>
+                            <a href="#compras" class="text-reset" style="text-decoration: none;" >---------</a>
+                        </p>
+                        <p>
+                            <a href="#compras" class="text-reset" style="text-decoration: none;" >---------</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                        <p><i class="fas fa-home me-3"></i> Km 4, Anillo Vial, Bucaramanga, Santander</p>
+                        <p><i class="fas fa-envelope me-3"></i>GameFront@correo.com</p>
+                        <p><i class="fas fa-phone me-3"></i> + 11 001 110 11</p>
+                        <p><i class="fas fa-print me-3"></i> + 00 110 011 01</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: #000000; color: white;">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="index.html">GameFront.com</a>
+            <div class="credits">
+                Diseñado por
+                <a href="https://www.linkedin.com/in/andr%C3%A9s-santiago-hern%C3%A1ndez-moncada/" target="_blank"
+                  >Santiago Hernández </a
+                >
+              </div>
+        </div>
+    </footer>
+</body>
+<script src="./codigo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script
+</html>
